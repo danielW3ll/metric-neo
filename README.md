@@ -73,7 +73,14 @@ The project follows a **Modular Monolith** approach using **Hexagonal Architectu
     - [ ] Frontend Implementation (Vue.js)
     - [ ] Data Persistence Layer (JSON)
     - [ ] First Alpha Release
-
+- [ ] **Phase 5: CI/CD & Automation**
+    - [ ] Configure GitHub Actions (Cross-Compile Wails for Win/Linux)
+    - [ ] Setup Quality Gates (Go Vet?, biome.js ? Testing?)
+    - [ ] Automate Release Pipelines (Draft Releases & Artifact Upload)
+- [ ] **Phase 6: Web Presence & Ecosystem**
+    - [ ] Setup VitePress for Documentation & Landing Page
+    - [ ] Configure GitHub Actions for Automatic SFTP Deployment
+    - [ ] Implement Automated Download Page 
 ## 🚀 Getting Started
 
 ### comming soon...
