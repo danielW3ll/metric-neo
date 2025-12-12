@@ -1,4 +1,4 @@
- ADR 003: Datenhaltung, Snapshot-Strategie und JSON-Struktur
+ # ADR 003: Datenhaltung, Snapshot-Strategie und JSON-Struktur
 
 * **Status:** Offene Entscheidung
 * **Datum:** 2025-12-11

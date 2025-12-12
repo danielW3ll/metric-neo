@@ -60,18 +60,29 @@ The project follows a **Modular Monolith** approach using **Hexagonal Architectu
 - [x] **Phase 1: Conception**
     - [x] Requirements Analysis (High Assurance / Offline)
     - [x] Technology Selection (Go/Wails/Vue)
-    - [x] Domain Modeling (Kinetic Analysis)
+    - [x] Domain Modeling
 - [x] **Phase 2: Architecture**
-    - [x] System Context & Container Diagrams (C4 Model)
+    - [x] System Context & Container Diagrams
     - [x] Architecture Decision Records (ADRs) defined
     - [x] Security Strategy (Air-Gap / Linux First)
-- [ ] **Phase 3: Implementation (Core)**
-    - [ ] Initialize Wails Project Structure
-    - [ ] Implement RS232 Serial Driver (Go)
-    - [ ] Create Domain Logic (Velocity/Energy Calculation)
-- [ ] **Phase 4: UI & Delivery**
-    - [ ] Frontend Implementation (Vue.js)
-    - [ ] Data Persistence Layer (JSON)
+- [ ] **Phase 3: Backend Foundation**
+    - [ ] Domain Layer (Framework-Agnostic)
+        - [ ] Core Entities & Value Objects (Shot, Session, Projectile)
+        - [ ] Ballistic Calculations (Velocity/Energy)
+        - [ ] Unit Tests for Domain Logic
+    - [ ] Persistence Layer
+        - [ ] JSON Repository Implementation
+        - [ ] Snapshot Pattern (Deep Copy for Audit Trail)
+    - [ ] Framework Integration
+        - [ ] Initialize Wails Project Structure
+        - [ ] Application Service Layer (Domain ↔ UI Bridge)
+- [ ] **Phase 4: UI & Hardware Integration**
+    - [ ] Frontend Foundation (Vue.js + Element Plus)
+        - [ ] Session Management UI
+        - [ ] Shot Data Visualization
+    - [ ] Hardware Integration
+        - [ ] RS232 Serial Driver (LMBR Protocol)
+        - [ ] Auto-Discovery & Error Handling
     - [ ] First Alpha Release
 - [ ] **Phase 5: CI/CD & Automation**
     - [ ] Configure GitHub Actions (Cross-Compile Wails for Win/Linux)
@@ -81,6 +92,8 @@ The project follows a **Modular Monolith** approach using **Hexagonal Architectu
     - [ ] Setup VitePress for Documentation & Landing Page
     - [ ] Configure GitHub Actions for Automatic SFTP Deployment
     - [ ] Implement Automated Download Page 
+
+> **Note on Implementation Strategy:** The backend is developed in a layered approach (Domain → Persistence → Framework) to ensure maximum testability, portability, and adherence to hexagonal architecture principles. This allows the core logic to remain framework-agnostic and simplifies future platform extensions.
 ## 🚀 Getting Started
 
 ### comming soon...
