@@ -17,7 +17,15 @@ Für Anwender im professionellen und ambitionierten Sportbereich ergeben sich da
 3.  **Wartungs-Lücke:** Es gibt keine digitale Verknüpfung zwischen Schussleistung (Energieverlust) und Wartungsintervallen (z.B. Federwechsel, Sehnenverschleiß).
 
 ## Kontext und Problemstellung
-Für das Projekt "Metric Neo" wird eine moderne Desktop-Anwendung benötigt, die ballistische Messdaten von externer Hardware (LMBR Chronograph) via RS232 ausliest, visualisiert und archiviert.
+Für das Projekt "Metric Neo" wird eine moderne Desktop-Anwendung benötigt, die ballistische Messdaten von externer Hardware (LMBR Chronograph) via RS232 ausliest (im ersten Schritt), mit einem umfassenden **Inventar-Verwaltungssystem** verknüpft und historisch revisionssicher archiviert.
+
+Die Anwendung muss folgende Kernfunktionen abbilden:
+1. **Geräte-Inventarisierung:** Verwaltung mehrerer Sportgeräte (Profile) mit konfigurierbaren Eigenschaften (Lauflänge, Abzugsgewicht, montierte Zieloptiken).
+2. **Munitions-Datenbank:** Zentrale Verwaltung verschiedener Projektile (Diabolo, Pfeile) mit physikalischen Eigenschaften (Gewicht, ballistischer Koeffizient).
+3. **Session-basierte Messungen:** Erfassung zusammenhängender Messreihen mit automatischem Snapshot der verwendeten Konfiguration (Waffe + Munition + Umgebungsbedingungen) zum Zeitpunkt der Messung.
+4. **Audit-Trail & Historie:** Unveränderliche Archivierung historischer Daten durch Deep-Copy-Mechanismus – Änderungen an Stammdaten dürfen nachträglich berechnete Energiewerte alter Sessions nicht beeinflussen.
+5. **Wartungs-Tracking:** Langfristige Analyse von Leistungsdegradation (Geschwindigkeitsverlust) zur Ableitung von Wartungsintervallen (z.B. Federwechsel, Sehnenverschleiß).
+
 Die Anwendung muss sowohl auf **Windows** (breite Masse im Sportbereich) als auch auf **Linux** (technische Nutzer, Sicherheitsfokus) lauffähig sein.
 Da das Projekt als Referenz dient und später potenziell erweitert wird, muss die Architektur eine Balance zwischen **Entwicklungsgeschwindigkeit** (Time-to-Market), **Wartbarkeit** und **Betriebssicherheit** finden.
 

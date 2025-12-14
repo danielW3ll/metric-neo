@@ -72,7 +72,8 @@ Die Vorlage für die ballistische Berechnung.
 
 | Attribut | Typ | Beschreibung |
 | :--- | :--- | :--- |
-| **Name** | String | Hersteller/Charge (z.B. "JSB Exact 4.52"). |
+| **Name** | String | Hersteller/Produktname (z.B. "JSB Exact 4.52"). |
+| **Charge** | String | **Kritisch:** Chargen-/Losnummer für Rückverfolgbarkeit und Qualitätskontrolle (z.B. "LOT-2023-11-A"). Munition aus unterschiedlichen Chargen kann abweichende Gewichte haben. |
 | **Weight** | Mass | **Kritisch:** Basis für Energieberechnung. |
 | **BC** | Float | Ballistischer Koeffizient (Zukunftssicherheit). |
 
