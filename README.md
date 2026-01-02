@@ -65,14 +65,14 @@ The project follows a **Modular Monolith** approach using **Hexagonal Architectu
     - [x] System Context & Container Diagrams
     - [x] Architecture Decision Records (ADRs) defined
     - [x] Security Strategy (Air-Gap / Linux First)
-- [ ] **Phase 3: Backend Foundation**
-    - [ ] Domain Layer (Framework-Agnostic)
-        - [ ] Core Entities & Value Objects (Shot, Session, Projectile)
-        - [ ] Ballistic Calculations (Velocity/Energy)
-        - [ ] Unit Tests for Domain Logic
-    - [ ] Persistence Layer
-        - [ ] JSON Repository Implementation
-        - [ ] Snapshot Pattern (Deep Copy for Audit Trail)
+- [x] **Phase 3: Backend Foundation**
+    - [x] Domain Layer (Framework-Agnostic)
+        - [x] Core Entities & Value Objects (Shot, Session, Projectile)
+        - [x] Ballistic Calculations (Velocity/Energy)
+        - [x] Unit Tests for Domain Logic
+    - [x] Persistence Layer
+        - [x] JSON Repository Implementation
+        - [x] Snapshot Pattern (Deep Copy for Audit Trail)
     - [ ] Framework Integration
         - [ ] Initialize Wails Project Structure
         - [ ] Application Service Layer (Domain ↔ UI Bridge)
